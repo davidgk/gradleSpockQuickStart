@@ -30,8 +30,6 @@ dependencies {
 
 // the remaining configuration is specific to this project, and is not required for using Spock
 
-apply from: "gradle/ide.gradle"
-
 task collectJars(type: Copy) {
     into "$buildDir/output/lib"
     from configurations.testRuntime
